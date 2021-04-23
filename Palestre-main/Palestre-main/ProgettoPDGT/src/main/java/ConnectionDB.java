@@ -56,7 +56,7 @@ public class ConnectionDB{
             String sql = "select * from palestra";
             rs = myStmt.executeQuery(sql);
             while (rs.next()) {
-                // devo fare una print per ogni tipo di colonna che mi serve, non posso farli in un'unica riga
+                
                 System.out.print(rs.getString("nome"));
                 System.out.println(" - " + rs.getString("orari"));
                 System.out.println(" - " + rs.getString("via"));
@@ -77,7 +77,7 @@ public class ConnectionDB{
             String sql = "select * from palestra where idpalestra = " + IDPalestra;
             rs = myStmt.executeQuery(sql);
             while (rs.next()) {
-                // devo fare una print per ogni tipo di colonna che mi serve, non posso farli in un'unica riga
+                
                 System.out.print(rs.getString("nome"));
                 System.out.println(" - " + rs.getString("orari"));
                 System.out.println(" - " + rs.getString("via"));
@@ -98,7 +98,7 @@ public class ConnectionDB{
             String sql = "select * from istruttori where idistruttore = " + IDIstruttore;
             rs = myStmt.executeQuery(sql);
             while (rs.next()) {
-                // devo fare una print per ogni tipo di colonna che mi serve, non posso farli in un'unica riga
+                
                 System.out.print(rs.getString("Nome"));
                 System.out.print("  " + rs.getString("Cognome"));
                 System.out.print("\n");
@@ -118,7 +118,7 @@ public class ConnectionDB{
             String sql = "select * from istruttori";
             rs = myStmt.executeQuery(sql);
             while (rs.next()) {
-                // devo fare una print per ogni tipo di colonna che mi serve, non posso farli in un'unica riga
+                
                 System.out.print(rs.getString("Nome"));
                 System.out.print("  " + rs.getString("Cognome"));
                 System.out.print("\n");
@@ -138,7 +138,7 @@ public class ConnectionDB{
             String sql = "select * from corsi";
             rs = myStmt.executeQuery(sql);
             while (rs.next()) {
-                // devo fare una print per ogni tipo di colonna che mi serve, non posso farli in un'unica riga
+                
                 System.out.print(rs.getString("Nome"));
                 System.out.print(" - " + rs.getString("orario"));
                 System.out.print(" - " + rs.getString("descrizione"));
@@ -159,7 +159,7 @@ public class ConnectionDB{
             String sql = "select * from corsi where IDCorso = " + IDCorso;
             rs = myStmt.executeQuery(sql);
             while (rs.next()) {
-                // devo fare una print per ogni tipo di colonna che mi serve, non posso farli in un'unica riga
+                
                 System.out.print(rs.getString("Nome"));
                 System.out.print(" - " + rs.getString("orario"));
                 System.out.print(" - " + rs.getString("descrizione"));
@@ -179,7 +179,7 @@ public class ConnectionDB{
             String sql = "select * from corsi where idistruttore = " + IDIstruttore;
             rs = myStmt.executeQuery(sql);
             while (rs.next()) {
-                // devo fare una print per ogni tipo di colonna che mi serve, non posso farli in un'unica riga
+                
                 System.out.print(rs.getString("Nome"));
                 System.out.print(" - " + rs.getString("orario"));
                 System.out.print(" - " + rs.getString("descrizione"));
@@ -199,7 +199,7 @@ public class ConnectionDB{
             String sql = "select * from corsi where IDPalestra = " + IDPalestra;
             rs = myStmt.executeQuery(sql);
             while (rs.next()) {
-                // devo fare una print per ogni tipo di colonna che mi serve, non posso farli in un'unica riga
+                
                 System.out.print(rs.getString("Nome"));
                 System.out.print(" - " + rs.getString("orario"));
                 System.out.print(" - " + rs.getString("descrizione"));
